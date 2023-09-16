@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #30B0A4;
+    height: 200em;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 5em;
+}
+
+.listHeader {
+    position: relative;
+}
+
+nav {
+    position: absolute;
+    margin-left: auto;
+    margin-top: 25px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 7.5px 0 7.5px;
+    font-size: 15px;
+}
+
+.buttonContato {
+    width: 8em;
+    height: 2em;
+    background-color: #30B0A4;
+    border: 0px;
+    border-radius: 5px;
+}
