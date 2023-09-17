@@ -9,11 +9,11 @@ function ajustarPosicaoDoHeader() {
 }
 
 window.addEventListener('load', ajustarPosicaoDoHeader());
-const alturaHeader = window.getComputedStyle(header).getPropertyValue('height')
+let headerHeight = parseInt(window.getComputedStyle(header).getPropertyValue('height'), 10);
 
 window.addEventListener('scroll', function () {
-    if (scrollY >= windowHeight - 80) {
+    if (scrollY >= windowHeight - headerHeight) {
         header.style.position = 'sticky';
-        header.style.top = '0'
+        header.style.top = '0';
     }
 })
