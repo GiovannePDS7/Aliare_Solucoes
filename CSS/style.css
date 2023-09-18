@@ -7,7 +7,7 @@
 
 body {
     height: 200em;
-    background: #b1abab;
+    background: #eeecec;
 }
 
 header {
@@ -96,4 +96,42 @@ header, #div1, #div2, #div3 {
 
 #aliare {
     width: 12em;
+}
+
+#divEmpresa, #divImg {
+    position: absolute;
+    top: 0;
+}
+
+#divEmpresa {
+    border-radius: 10%;
+    height: 20em;
+    width: 25em;
+    margin-top: 4.6%;
+    margin-left: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(1.8px);
+}
+
+#empresa {
+    color: #ffffff;
+    text-shadow: 4px 1px #000000;
+    letter-spacing: 2px;
+    line-height: 1.2em;
+    font-size: 530%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#divImg {
+    background: #c91515;
+    width: 100%;
+    height: 84%;
+}
+
+#teste {
+    position: relative;
+    height: 100%;
+    width: 100%;
 }
