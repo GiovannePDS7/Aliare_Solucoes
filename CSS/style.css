@@ -136,7 +136,7 @@ header {
 #aHeaderBtn:hover {
     background: transparent;
     border: 2px solid #477CB4;
-    transition: 0.12s ease-in;
+    transition: 0.3s ease-in;
 }
 
 #aHeaderBtn:hover #spanHeader {
