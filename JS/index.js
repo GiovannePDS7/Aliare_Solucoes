@@ -1,6 +1,5 @@
 const header = document.querySelector('header');
 const windowHeight = window.innerHeight;
-
 function ajustarPosicaoDoHeader() {
     header.style.bottom = '0';
 
@@ -13,7 +12,6 @@ let headerHeight = parseInt(window.getComputedStyle(header).getPropertyValue('he
 
 window.addEventListener('scroll', function () {
     if (scrollY >= windowHeight - headerHeight) {
-        header.style.position = 'sticky';
         header.style.top = '0';
     }
-})
+})  

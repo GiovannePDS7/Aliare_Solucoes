@@ -1,3 +1,10 @@
+:root {
+    --colorBG-header: #fff;
+    --height-header: 6em;
+    --colorBG-span: #000;
+    --color-adress: #B33C3E;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,53 +13,93 @@
 }
 
 body {
+    background: #000;
     height: 200em;
-    background: #eeecec;
 }
 
 header {
+    z-index: 1;
+    background: var(--colorBG-header);
     width: 100%;
     display: flex;
-    position: absolute;
+    position: sticky;
 }
 
-header, #div1, #div2, #div3 {
-    height: 6.2em;
+header {
+    height: var(--height-header);
 }
 
 #ContainerHeader {
     width: 100%;
-    height: 5em;
+    height: 100%;
     display: inline-flex;
     position: relative;
 }
 
-#div1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 21%;
+#div1,
+#div2,
+#div3 {
+    height: 100%;
     position: relative;
 }
 
-#div2 {
-    width: 56%;
-    position: relative;
-}
-
+#div1,
 #div3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 25%;
-    position: relative;
+}
+
+#div1 {
+    width: 21%;
+}
+
+#div2 {
+    width: 61%;
+}
+
+#div3 {
+    width: 20%;
 }
 
 .liHeader {
-    letter-spacing: 1px;
+    font-size: 97%;
+    position: relative;
     list-style: none;
     cursor: pointer;
-    margin: 1em;
+    line-height: 2.3em;
+}
+
+.liHeader:hover {
+    color: #477CB1;
+}
+
+.liHeader::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10;
+    width: 0;
+    height: 2px;
+    background-color: #417AB1;
+    transition: width 0.3s ease-in-out;
+    z-index: -1;
+}
+
+.liHeader:hover::before {
+    width: 100%;
+}
+
+
+.liHeader:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #417AB1;
+    transition: width 0.2s ease-in-out;
 }
 
 #navHeader {
@@ -63,13 +110,15 @@ header, #div1, #div2, #div3 {
 }
 
 #ulHeader {
+    justify-content: space-around;
+    width: 100%;
     font-size: 1rem;
     display: inline-flex;
 }
 
 #spanHeader {
-    font-size: 1.2rem;
-    letter-spacing: 2px;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
     color: #ffffff;
 }
 
@@ -78,16 +127,16 @@ header, #div1, #div2, #div3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 3.2em;
-    background: #477CB4;
-    width: 16em;
-    border-radius: 30px;
+    height: 3.8em;
+    background: var(--colorBG-span);
+    width: 10em;
+    border-radius: 35px;
 }
 
 #aHeaderBtn:hover {
     background: transparent;
     border: 2px solid #477CB4;
-    transition: 0.15s ease-in;
+    transition: 0.12s ease-in;
 }
 
 #aHeaderBtn:hover #spanHeader {
@@ -98,40 +147,56 @@ header, #div1, #div2, #div3 {
     width: 12em;
 }
 
-#divEmpresa, #divImg {
+#divImg {
+    display: flex;
+    align-items: end;
     position: absolute;
     top: 0;
-}
-
-#divEmpresa {
-    border-radius: 10%;
-    height: 20em;
-    width: 25em;
-    margin-top: 4.6%;
-    margin-left: 3%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    backdrop-filter: blur(1.8px);
-}
-
-#empresa {
-    color: #ffffff;
-    text-shadow: 4px 1px #000000;
-    letter-spacing: 2px;
-    line-height: 1.2em;
-    font-size: 530%;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-#divImg {
-    background: #c91515;
+    /* cor temporaria para visibilidade / Falta defiinir um tamanho responsivo da div*/
     width: 100%;
-    height: 84%;
+    height: 90%;
 }
 
 #teste {
     position: relative;
     height: 100%;
+    width: 100%;
+}
+
+#divAdress {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-adress);
+    height: 6.7%;
+    width: 25%;
+    margin-bottom: 4em;
+    margin-left: 3em;
+}
+
+#adress {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 100%;
+    width: 100%;
+    background: var(--color-adress);
+    font-weight: bold;
+    float: right;
+    padding-right: 0.6em;
+    color: #fff;
+    font-size: 117%;
+}
+
+#adressIcon {
+    margin-left: 0.8em;
+    width: 11%;
+    height: 88%;
+}
+
+#sobreNos {
+    background: #e9e9e9;
+    height: 37em;
     width: 100%;
 }
