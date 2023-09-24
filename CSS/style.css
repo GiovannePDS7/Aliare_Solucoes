@@ -315,7 +315,7 @@ header {
 }
 
 #linhaInfo1 {
-    background: linear-gradient(to left, #04B4A9, #0CE607, #3AFF94, #9DE494)
+    background: linear-gradient(to left, #2a04b4, #0768e6, #3aa6ff, #94b4e4);
 }
 
 #linhaInfo2 {
@@ -327,18 +327,18 @@ header {
 }
 
 #littleContainerLeft {
-    background: linear-gradient(to bottom, #04B4A9, #0CE607, #3AFF94, #9DE494);
-    transition: 0.3s ease;
+    background: linear-gradient(to bottom, #2a04b4, #0768e6, #3aa6ff, #94b4e4);
+    transition: 0.3s ease-in-out;
 }
 
 #littleContainerCenter {
     background: linear-gradient(to bottom, #FF0000, #FF5C00, #FF9900, #E1D91A);
-    transition: 0.3s ease;
+    transition: 0.3s ease-in-out;
 }
 
 #littleContainerRight {
-    background: linear-gradient(to bottom, #6300A8, #932BEF, #6A18DF, #5713FF);
-    transition: 0.4s ease;
+    background: linear-gradient(to bottom, #5d019e, #932BEF, #a42ddf, #aa1dfb);
+    transition: 0.3s ease-in-out;
 }
 
 .divTxtInfo {
@@ -352,4 +352,11 @@ header {
 
 .txtInfo {
     color: #ffffff;
+
+}
+
+.iconSubInfo, .iconSubInfo2 {
+    float: right;
+    height: 40%;
+    width: 26%;
 }
