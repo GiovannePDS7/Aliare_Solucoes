@@ -206,21 +206,27 @@ header {
     height: 100%;
 }
 
-#Titulo1 {
+.title {
     font-size: 240%;
     padding-top: 1.5em;
     margin-left: 1.2em;
-    width: 16%;
+    height: 3em;
     font-family: 'Anton';
 }
 
-.linha {
+#linha1 {
     background: #000;
-    width: 3.22em;
+    width: 3.12em;
     height: 4.6px;
 }
 
-#coitainerSobreNos {
+#linha2 {
+    background: #000;
+    width: 2.3em;
+    height: 4.6px;
+}
+
+#containerSobreNos {
     width: 50%;
     height: 28em;
     background-color: #000000;
@@ -359,4 +365,64 @@ header {
     float: right;
     height: 40%;
     width: 26%;
+}
+
+#Parceiros {
+    height: 38em;
+    width: 100%;
+    background-image: url(../imagens/fundo.png);
+
+}
+
+#containerParceiros {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.littleContainerParceiros {
+    width: 28%;
+    height: 88%;
+    background: #2d0798;
+}
+
+.linhaVertical {
+    margin: 0 2em 0 2em;
+    width: 0.35em;
+    height: 67%;
+    border-radius: 30px;
+    background: #000;
+}
+
+.cardImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    height: 50%;
+}
+
+.ImgParceiros {
+    max-width: 100%;
+    height: auto;
+}
+
+.cardText {
+    padding: 0 1.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 56%;
+    background: #000000;
+    text-align: center;
+}
+
+.textParceiros {
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.4;
 }
