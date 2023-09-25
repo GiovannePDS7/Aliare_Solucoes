@@ -36,7 +36,7 @@ window.addEventListener('scroll', function () {
 
 ContainerLeft.addEventListener('mouseover', function () {
     LContainerLeft.style.width = '100%';
-    LContainerLeft.style.borderRadius = '8%';
+    LContainerLeft.style.borderRadius = '2%';
     Linha1.style.display = 'none';
 });
 ContainerLeft.addEventListener('mouseleave', function () {
@@ -47,7 +47,7 @@ ContainerLeft.addEventListener('mouseleave', function () {
 
 ContainerCenter.addEventListener('mouseover', function () {
     LContainerCenter.style.width = '100%';
-    LContainerCenter.style.borderRadius = '8%';
+    LContainerCenter.style.borderRadius = '2%';
     Linha2.style.display = 'none';
 });
 ContainerCenter.addEventListener('mouseleave', function () {
@@ -58,7 +58,7 @@ ContainerCenter.addEventListener('mouseleave', function () {
 
 ContainerRight.addEventListener('mouseover', function () {
     LContainerRight.style.width = '100%';
-    LContainerRight.style.borderRadius = '8%';
+    LContainerRight.style.borderRadius = '2%';
     Linha3.style.display = 'none';
 });
 ContainerRight.addEventListener('mouseleave', function () {
