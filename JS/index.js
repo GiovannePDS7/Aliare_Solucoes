@@ -24,8 +24,8 @@ function ajustarPosicaoDoHeader() {
     var conteudoAbaixoDoHeader = windowHeight - header.clientHeight;
     document.body.style.marginTop = conteudoAbaixoDoHeader + 'px';
 }
+addEventListener('resize', ajustarPosicaoDoHeader())
 
-window.addEventListener('load', ajustarPosicaoDoHeader());
 let headerHeight = parseInt(window.getComputedStyle(header).getPropertyValue('height'), 10);
 
 window.addEventListener('scroll', function () {
