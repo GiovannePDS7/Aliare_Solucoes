@@ -571,24 +571,44 @@ footer {
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: safe;
 }
 
 #containerFrame {
     margin-top: 10vh;
     width: 26vw;
     height: 72vh;
-    background: #89E8AA;
+    background: #9cfabd;
     margin-left: 13vw;
     z-index: 2;
-    box-shadow: 7.5px 8.3px 10px 0px #0000008d
+    box-shadow: 7.5px 8.3px 10px 0px #0000008d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #containerFrame2 {
     position: absolute;
     width: 25.8vw;
     height: 72vh;
-    background: #6868E6;
+    background: #66b1da;
     z-index: 1;
     transform: translate(54.8%, 9.5%);
+}
+
+#FrameText {
+    text-align: center;
+    font-size: 3.4vh;
+    padding-right: 0.3vw;
+}
+
+#FrameSpan {
+    font-size: 5.5vh;
+    text-align: center;
+    letter-spacing: 0.1vh;
+}
+
+#toggleElement {
+    height: 8%;
+    width: 0.25vw;
+    background: #000;
 }
