@@ -1,59 +1,9 @@
-const ContainerLeft = document.getElementById('containerLeft')
-const LContainerLeft = document.getElementById('littleContainerLeft');
-
-const ContainerCenter = document.getElementById('containerCenter')
-const LContainerCenter = document.getElementById('littleContainerCenter');
-
-const ContainerRight = document.getElementById('containerRight')
-const LContainerRight = document.getElementById('littleContainerRight');
-
-const width = window.getComputedStyle(LContainerLeft).getPropertyValue('width', 10)
-const BRadius = window.getComputedStyle(LContainerLeft).getPropertyValue('border-radius')
-
-const Linha1 = document.getElementById('linhaInfo1');
-const Linha2 = document.getElementById('linhaInfo2');
-const Linha3 = document.getElementById('linhaInfo3');
-
 const Frame = document.getElementById('containerFrame');
 const Frame2 = document.getElementById('containerFrame2');
-
 
 const FrameSpan = document.getElementById('FrameSpan');
 const FrameText = document.getElementById('FrameText');
 const phrase = ['Confiança', 'Qualidade', 'Transparência'];
-
-ContainerLeft.addEventListener('mouseover', function () {
-    LContainerLeft.style.width = '100%';
-    LContainerLeft.style.borderRadius = '2%';
-    Linha1.style.display = 'none';
-});
-ContainerLeft.addEventListener('mouseleave', function () {
-    LContainerLeft.style.width = width;
-    LContainerLeft.style.borderRadius = BRadius;
-    Linha1.style.display = 'block';
-});
-
-ContainerCenter.addEventListener('mouseover', function () {
-    LContainerCenter.style.width = '100%';
-    LContainerCenter.style.borderRadius = '2%';
-    Linha2.style.display = 'none';
-});
-ContainerCenter.addEventListener('mouseleave', function () {
-    LContainerCenter.style.width = width;
-    LContainerCenter.style.borderRadius = BRadius;
-    Linha2.style.display = 'block';
-});
-
-ContainerRight.addEventListener('mouseover', function () {
-    LContainerRight.style.width = '100%';
-    LContainerRight.style.borderRadius = '2%';
-    Linha3.style.display = 'none';
-});
-ContainerRight.addEventListener('mouseleave', function () {
-    LContainerRight.style.width = width;
-    LContainerRight.style.borderRadius = BRadius;
-    Linha3.style.display = 'block';
-});
 let phraseIndice = 0;
 let indice = 0;
 
