@@ -598,17 +598,19 @@ footer {
 #FrameText {
     text-align: center;
     font-size: 3.4vh;
-    padding-right: 0.3vw;
+
 }
 
 #FrameSpan {
     font-size: 5.5vh;
     text-align: center;
-    letter-spacing: 0.1vh;
+    letter-spacing: 0.12vh;
 }
 
 #toggleElement {
+    border-radius: 3px;
+    width: 2px;
     height: 8%;
-    width: 0.25vw;
     background: #000;
+    float: right;
 }
