@@ -594,10 +594,10 @@ footer {
     margin-top: 10vh;
     width: 26vw;
     height: 72vh;
-    background: #9cfabd;
+    background: linear-gradient(#89E8AA, #89E8AA);
     margin-left: 13vw;
     z-index: 2;
-    box-shadow: 7.5px 8.3px 10px 0px #0000008d;
+    box-shadow: 7.5px 8.3px 7px 0px #00000089;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -607,7 +607,7 @@ footer {
     position: absolute;
     width: 25.8vw;
     height: 72vh;
-    background: #66b1da;
+    background: #8383ffea;
     z-index: 1;
     transform: translate(54.8%, 9.5%);
 }
@@ -615,7 +615,6 @@ footer {
 #FrameText {
     text-align: center;
     font-size: 3.4vh;
-
 }
 
 #FrameSpan {

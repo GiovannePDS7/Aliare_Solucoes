@@ -32,16 +32,6 @@ function addTextFrame() {
         toggleElement.style.visibility = "visible";
         FrameSpan.innerHTML += phrase[phraseIndice][indice];
         indice++;
-        if (phraseIndice == 0) {
-            Frame.style.background = '#2BAFA2';
-            Frame2.style.background = '#209489';
-        } else if (phraseIndice == 1) {
-            Frame.style.background = '#73C4F1';
-            Frame2.style.background = '#66b1da';
-        } else if (phraseIndice == 2) {
-            Frame.style.background = '#417AB1';
-            Frame2.style.background = '#3a6fa1';
-        }
         setTimeout(addTextFrame, 120);
     } else {
         const toggleInterval = setInterval(toggle, 500);
