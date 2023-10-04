@@ -317,7 +317,7 @@ header {
 }
 
 #Parceiros {
-    height: 38em;
+    height: 100vh;
     width: 100%;
     background-image: url(../imagens/fundo.png);
 }
@@ -629,4 +629,152 @@ footer {
     height: 8%;
     background: #000;
     float: right;
+}
+
+.projeto{
+    width: 100%;
+    height: 110vh;
+    display: flex;
+}
+
+.projetoLeft{
+    width: 50%;
+    height: 100%;
+}
+
+#containerProjeto {
+    position: relative;
+    width: 95%;
+    height: 28em;
+    background-color: #89E8AA;
+    transform: skewX(20deg);
+    margin-top: 3em;
+    transform-origin: bottom left;
+    border-radius: 5px;
+    box-shadow: 7.5px 8.3px 10px 0px #212162;
+}
+
+#textProjeto {
+    color: #000000;
+    font-size: 20px;
+    line-height: 1.8;
+    margin-top: 5em;
+}
+
+#littleContainerProjeto {
+    position: relative;
+    width: 67%;
+    height: 70%;
+    transform: skewX(-20deg);
+    margin-left: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projetoRight{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+#video{
+    width: 45vw;
+    height: 60vh;
+}
+
+#devs{
+    width: 100%;
+    height: 15vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#litterContainerDevs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+}
+
+
+#JoaoEduardo{
+    width: 7vw;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Giovanne{
+    width: 7vw;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+
+#instaJoaoEduardo,
+#instaGiovanne{
+    width: 3vw;
+    height: 6vh;
+    cursor: pointer;
+}
+
+#gitJoaoEduardo,
+#gitGiovanne{
+    width: 3vw;
+    height: 5.5vh;
+    cursor: pointer;
+    margin-left: 4px;
+}
+
+#txtDevs{
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+}
+
+#devs {
+    width: 100%;
+    height: 15vh;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#litterContainerDevs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.developer {
+    display: flex;
+    align-items: center;
+    margin: 0 10px; 
+}
+
+.social-icon {
+    width: 3vw;
+    height: 6vh;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.developer-name {
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 4px;
+    margin-left: 10px;
 }
