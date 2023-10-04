@@ -609,7 +609,7 @@ footer {
     height: 72vh;
     background: #8383ffea;
     z-index: 1;
-    transform: translate(54.8%, 9.5%);
+    transform: translate(54.8%, 9.6%);
 }
 
 #FrameText {
@@ -629,4 +629,59 @@ footer {
     height: 8%;
     background: #000;
     float: right;
+}
+
+#projeto {
+    width: 100%;
+    height: 110vh;
+    display: flex;
+}
+
+#projetoLeft {
+    width: 50%;
+    height: 100%;
+}
+
+#containerProjeto {
+    position: relative;
+    width: 95%;
+    height: 28em;
+    background-color: #89E8AA;
+    transform: skewX(20deg);
+    margin-top: 3em;
+    transform-origin: bottom left;
+    border-radius: 5px;
+    box-shadow: 7.5px 8.3px 10px 0px #212162;
+}
+
+#textProjeto {
+    color: #000000;
+    font-size: 20px;
+    line-height: 1.8;
+    margin-top: 5em;
+}
+
+#littleContainerProjeto {
+    position: relative;
+    width: 67%;
+    height: 70%;
+    transform: skewX(-20deg);
+    margin-left: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#projetoRight {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+#video {
+    width: 45vw;
+    height: 60vh;
 }
