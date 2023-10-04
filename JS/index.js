@@ -46,37 +46,16 @@ function addTextFrame() {
     }
 }
 addTextFrame();
+
 const liProjetos = document.getElementById('liProjetos');
+const header = document.querySelector('header');
+const projetoSection = document.getElementById('projeto');
+const headerHeight = header.offsetHeight;
 
-function windowProjetos() {
-    let WHProjeto = window.scrollY;
-    const divProjeto = document.getElementById('projeto');
-    const rect = divProjeto.getBoundingClientRect();
-
-    const cYProjeto = rect.top + window.scrollY - 26;
-
-    function animateScrollProjeto() {
-        if (WHProjeto < cYProjeto) {
-            WHProjeto += 100;
-            window.scrollTo({
-                top: WHProjeto,
-                behavior: 'smooth',
-            });
-            requestAnimationFrame(animateScrollProjeto);
-        } else if (WHProjeto > cYProjeto) {
-            WHProjeto -= 80;
-            if (WHProjeto < cYProjeto) {
-                WHProjeto = cYProjeto;
-            }
-            window.scrollTo({
-                top: WHProjeto,
-                behavior: 'smooth',
-            });
-            requestAnimationFrame(animateScrollProjeto);
-        }
-    }
-    animateScrollProjeto();
-}
-
-liProjetos.addEventListener('click', windowProjetos);
+document.addEventListener('DOMContentLoaded', function () {
+    liProjetos.addEventListener('click', function () {
+        projetoSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        window.scrollBy(0, -headerHeight + 1);
+    });
+});
 
