@@ -557,13 +557,13 @@ footer {
 }
 
 #nameAliare {
-    width: 26vw;
-    margin-top: 6em;
+    width: 52vh;
+    margin-top: 14.2vh;
     margin-left: 11vw;
 }
 
 #spanAliare {
-    font-size: 8.5vw;
+    font-size: 17.2vh;
 }
 
 #spanAliare, #spanUni {
@@ -574,13 +574,13 @@ footer {
     display: flex;
     width: 100%;
     justify-content: end;
-    font-size: 2.7vw;
+    font-size: 5.5vh;
 }
 
 #ImgHome {
     position: absolute;
     max-width: 100%;
-    height: 28vw;
+    height: 57vh;
     margin-top: 42.8vh;
     margin-left: 20vw;
 }
@@ -625,7 +625,7 @@ footer {
 }
 
 #FrameSpan {
-    font-size: 5.5vh;
+    font-size: 2.75vw;
     text-align: center;
     letter-spacing: 0.12vh;
 }
@@ -633,7 +633,7 @@ footer {
 #toggleElement {
     border-radius: 3px;
     width: 2px;
-    height: 5.6vh;
+    height: 3vw;
     background: #000;
     float: right;
 }
@@ -801,3 +801,189 @@ footer {
         margin: 10px 0;
     }
 }
+
+@media screen and (max-width: 500px) {
+    #div2 {
+        display: none;
+    }
+
+    header {
+        height: var(--height-header);
+        background: var(--colorBG-header);
+        width: 100%;
+    }
+
+    #ContainerHeader {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+
+    #div1,
+    #div3 {
+        height: 100%;
+    }
+
+    #div1 {
+        width: 80vw;
+    }
+
+    #div3 {
+        width: 30vw;
+        margin: 0vw 4vw 0vw 3vw;
+    }
+
+    #aHeaderBtn {
+        letter-spacing: 1px;
+        font-size: 1.6vh;
+        cursor: pointer;
+        height: 6vh;
+        background: var(--colorBG-span);
+        border-radius: 1vh;
+        width: 28vh;
+        color: #fff;
+    }
+
+    #div1,
+    #div3 {
+        height: 13vh;
+    }
+
+    #aliare {
+        max-width: 50vw;
+        height: 11vh;
+    }
+
+    #littleContainerHome {
+        display: none;
+    }
+
+    #ImgHome {
+        display: none;
+    }
+
+    #littleContainerHome2 {
+        width: 100vw;
+        height: 60vh;
+    }
+
+    #containerFrame {
+        margin-top: 10vh;
+        width: 70vw;
+        height: 30vh;
+        background: linear-gradient(#89E8AA, #89E8AA);
+        z-index: 2;
+        box-shadow: 7.5px 8.3px 7px 0px #00000089;
+    }
+
+    #containerHome {
+        width: 100%;
+        height: 65vh;
+        display: flex;
+    }
+
+    #containerFrame2 {
+        width: 56vw;
+        height: 31.5vh;
+    }
+
+    #FrameSpan {
+        font-size: 4vh;
+        text-align: center;
+        letter-spacing: 0.12vh;
+    }
+
+    #Parceiros {
+        height: 65vh;
+        width: 100%;
+        background-image: none;
+        background-color: #b9cde27e;
+    }
+
+    .title {
+        font-size: 5vh;
+        padding-top: 0.5em;
+        margin-left: 0;
+        height: 2em;
+        font-family: 'Anton';
+        text-align: center;
+    }
+
+    #linha2 {
+        display: none;
+    }
+
+    #containerProj {
+        position: none;
+        height: 115vh;
+        width: 100%;
+
+        flex-direction: column;
+    }
+
+    #projetoLeft {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        height: 65vh;
+        background-color: #2ae863;
+    }
+
+    #projetoRight {
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #containerProjeto {
+        position: none;
+        max-width: 100%;
+        height: 65vh;
+        background-color: #89E8AA;
+        transform: none;
+        transform-origin: none;
+        border-radius: 0;
+        box-shadow: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #littleContainerProjeto {
+        width: 90vw;
+        transform: none;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #textProjeto {
+        color: #000000;
+        font-size: 18px;
+        line-height: 1.8;
+        margin-top: 0;
+    }
+
+
+    #video {
+        border-radius: 5px;
+        max-width: 90%;
+        height: 58%;
+    }
+
+    .imgFooter {
+        display: none;
+    }
+}
+
+/* @media (max-width: 2920px) and (max-height:1984px) {
+    #containerFrame {
+        width: 29.5vw;
+    }
+
+    #containerFrame2 {
+        width: 28.5vw
+    }
+} */
