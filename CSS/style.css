@@ -1160,8 +1160,7 @@ footer {
 
     .carousel-container {
         border: solid 2px #000000;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
+        border-radius: 5px;
         position: relative;
         max-width: 800px;
         margin: auto;
