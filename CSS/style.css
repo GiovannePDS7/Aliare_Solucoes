@@ -926,7 +926,7 @@ footer {
     }
 
     .title {
-        font-size: 5vh;
+        font-size: 3.7vh;
         padding-top: 0.5em;
         margin-left: 0;
         height: 2em;
@@ -936,11 +936,13 @@ footer {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        margin-bottom: 1vh;
     }
 
     #linha2 {
         height: 2px;
-        margin-right: 9vh;
+        margin-right: 7vh;
+
         display: block;
     }
 
