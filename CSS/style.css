@@ -916,13 +916,10 @@ footer {
     }
 
     #Parceiros {
-        height: 60vh;
+        background: none;
+        height: 45vh;
         width: 100%;
-        background-image: url(../imagens/fundo.png);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        justify-content: center;
-        align-items: center;
+        margin-bottom: 5vh;
     }
 
     .title {
@@ -1182,7 +1179,7 @@ footer {
                 #ffffff, #f0faff, #e6e6e6,
                 #e6e6e6, #dddddd, #d8d8d8,
                 #c4c4c4, #696969);
-        height: 32vh;
+
         width: 14vw;
         min-width: 100%;
         box-sizing: border-box;
@@ -1214,8 +1211,8 @@ footer {
     }
 
     .arrow {
-        height: 5vh;
-        width: 5vh;
+        height: 4vh;
+        width: 4vh;
         cursor: pointer;
     }
 
@@ -1226,11 +1223,13 @@ footer {
 
     #containerParceiros {
         width: 100%;
-        height: 40vh;
+        height: 35vh;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: row;
+        background-image: url(../imagens/fundo.png);
+        background-repeat: no-repeat;
     }
 
     .containerButton {
