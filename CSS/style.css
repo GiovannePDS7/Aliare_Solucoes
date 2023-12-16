@@ -17,7 +17,7 @@ body {
 }
 
 header {
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.082);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.11);
     ;
     position: fixed;
     z-index: 99;
@@ -326,7 +326,7 @@ header {
 } */
 
 #Parceiros {
-    height: 85vh;
+    height: 100vh;
     width: 100%;
     background-image: url(../imagens/fundo.png);
     background-repeat: no-repeat;
@@ -916,7 +916,6 @@ footer {
 
     #Parceiros {
         background: none;
-        height: 45vh;
         width: 100%;
         margin-bottom: 3.5vh;
     }
@@ -1200,18 +1199,44 @@ footer {
     }
 
     .prev-btn {
-        margin-left: auto;
-        margin-left: 15vw;
+        float: left;
+
     }
 
     .next-btn {
-        margin-right: auto;
-        margin-right: 15vw;
+        float: right;
+
+    }
+
+    #containerBtn {
+        display: inline-flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 8vh;
+        width: 100%;
+        /* background: #e90f0f; */
+        margin-bottom: 10vh;
+    }
+
+    #linhaBtn {
+        border-radius: 30px;
+        width: 3px;
+        background: #000;
+        height: 100%;
+    }
+
+    #CArrowLeft, #CArrowRight {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35%;
+        height: 65%;
+        /* background: #4155c7; */
     }
 
     .arrow {
-        height: 4vh;
-        width: 4vh;
+        height: 4.5vh;
+        width: 4.5vh;
         cursor: pointer;
     }
 
@@ -1222,11 +1247,11 @@ footer {
 
     #containerParceiros {
         width: 100%;
-        height: 35vh;
+        height: 65vh;
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: row;
+        flex-direction: column;
         background-image: url(../imagens/fundo.png);
         background-repeat: no-repeat;
     }
