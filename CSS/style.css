@@ -1178,7 +1178,7 @@ footer {
                 #e6e6e6, #dddddd, #d8d8d8,
                 #c4c4c4, #696969);
 
-        width: 20vw;
+        width: 32vw;
         min-width: 100%;
         box-sizing: border-box;
         display: flex;
@@ -1188,7 +1188,7 @@ footer {
 
     .imgCarousel {
         width: 30vw;
-        height: 25vw
+        height: 35vw
     }
 
     .prev-btn,
