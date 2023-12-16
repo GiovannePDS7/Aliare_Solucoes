@@ -825,12 +825,13 @@ footer {
     }
 
     header {
-        height: var(--height-header);
+        height: 10vh;
         background: var(--colorBG-header);
         width: 100%;
     }
 
     #ContainerHeader {
+        background: #000;
         width: 100%;
         height: 100%;
         display: flex;
@@ -838,15 +839,17 @@ footer {
 
     #div1,
     #div3 {
-        height: 100%;
+        height: 10vh;
     }
 
     #div1 {
-        width: 80vw;
+        justify-content: flex-start;
+        width: 50vw;
     }
 
     #div3 {
-        width: 30vw;
+        justify-content: flex-end;
+        width: 50vw;
         margin: 0vw 4vw 0vw 3vw;
     }
 
@@ -861,14 +864,9 @@ footer {
         color: #fff;
     }
 
-    #div1,
-    #div3 {
-        height: 13vh;
-    }
-
     #aliare {
-        max-width: 50vw;
-        height: 11vh;
+        max-width: 30vw;
+        height: 8vh;
     }
 
     #littleContainerHome {
@@ -919,7 +917,7 @@ footer {
         background: none;
         height: 45vh;
         width: 100%;
-        margin-bottom: 5vh;
+        margin-bottom: 3.5vh;
     }
 
     .title {
