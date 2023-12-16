@@ -1,5 +1,5 @@
 :root {
-    --colorBG-header: #fff;
+    --colorBG-header: #fcfcfc;
     --height-header: 13vh;
     --colorBG-span: #000;
     --color-adress: #B33C3E;
@@ -17,6 +17,8 @@ body {
 }
 
 header {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.082);
+    ;
     position: fixed;
     z-index: 99;
     height: var(--height-header);
@@ -1176,7 +1178,7 @@ footer {
                 #e6e6e6, #dddddd, #d8d8d8,
                 #c4c4c4, #696969);
 
-        width: 14vw;
+        width: 20vw;
         min-width: 100%;
         box-sizing: border-box;
         display: flex;
@@ -1186,7 +1188,7 @@ footer {
 
     .imgCarousel {
         width: 30vw;
-        height: 20vw
+        height: 25vw
     }
 
     .prev-btn,
