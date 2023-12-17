@@ -1285,3 +1285,17 @@ footer {
         align-items: flex-start;
     }
 }
+
+@media (max-width: 535px) {
+    footer {
+        height: 80vh;
+    }
+
+    .redeSocial {
+        margin-top: 3%;
+    }
+
+    .contato {
+        align-items: flex-start;
+    }
+}
