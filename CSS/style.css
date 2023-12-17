@@ -1244,6 +1244,7 @@ footer {
 
 @media (max-width: 535px) {
     footer {
+        background: #d1d40e;
         height: 80vh;
     }
 
@@ -1259,6 +1260,7 @@ footer {
 
 @media (max-width: 375px) {
     footer {
+        background: #089e65;
         height: 70vh;
     }
 
@@ -1275,6 +1277,7 @@ footer {
 
 @media (max-width: 425px) {
     footer {
+        background: #99046c;
         height: 72vh;
     }
 
@@ -1289,6 +1292,7 @@ footer {
 
 @media (max-width: 320px) {
     footer {
+        background: #640303;
         height: 63vh;
     }
 
