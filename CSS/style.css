@@ -1290,6 +1290,13 @@ footer {
     }
 }
 
+@media (max-width: 360px) {
+    footer {
+        background: #26cacf;
+        height: 68vh;
+    }
+}
+
 @media (max-width: 320px) {
     footer {
         background: #640303;
