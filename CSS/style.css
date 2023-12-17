@@ -1242,20 +1242,20 @@ footer {
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 535px) {
     footer {
-        height: 70vh;
+        height: 80vh;
     }
 
     .redeSocial {
-        margin-top: 5%;
+        margin-top: 3%;
     }
 
     .contato {
         align-items: flex-start;
     }
-
 }
+
 
 @media (max-width: 375px) {
     footer {
@@ -1272,6 +1272,7 @@ footer {
 
 }
 
+
 @media (max-width: 425px) {
     footer {
         height: 72vh;
@@ -1286,16 +1287,17 @@ footer {
     }
 }
 
-@media (max-width: 535px) {
+@media (max-width: 320px) {
     footer {
-        height: 80vh;
+        height: 70vh;
     }
 
     .redeSocial {
-        margin-top: 3%;
+        margin-top: 5%;
     }
 
     .contato {
         align-items: flex-start;
     }
+
 }
