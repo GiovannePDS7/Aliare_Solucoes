@@ -169,7 +169,7 @@ header {
     height: 4.6px;
 }
 
-/* 
+
 #sobreNos {
     background: #e9e9e9;
     height: 37em;
@@ -279,7 +279,7 @@ header {
 }
 
 #linhaInfo1 {
-    background: linear-gradient(to bottom, #30B0A4, #46D1C4, #57D8CC, #57E6D9);
+    background: linear-gradient(to bottom, #a1a1a1, #46D1C4, #57D8CC, #57E6D9);
 }
 
 #linhaInfo2 {
@@ -301,7 +301,7 @@ header {
 }
 
 #littleContainerRight {
-    background: linear-gradient(to bottom, #76C5F0, #82CEF8, #8AD1F8, #9EDDFF);
+    background: linear-gradient(to bottom, #5cc4fc, #6eb5db, #8AD1F8, #9EDDFF);
     transition: 0.3s ease-in-out;
 }
 
@@ -323,7 +323,7 @@ header {
     float: right;
     height: 40%;
     width: 26%;
-} */
+}
 
 #Parceiros {
     width: 100%;
@@ -793,7 +793,11 @@ footer {
     display: none;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1700px) {
+    #grandContainerInfo {
+        display: none;
+    }
+
     .carousel-container, .containerButton {
         display: block;
     }
@@ -1054,6 +1058,7 @@ footer {
     #iconEmail,
     #iconTel {
         max-width: 8%;
+        margin-bottom: 2.5vh;
     }
 
     #iconInstagram, #iconLinkedin {
