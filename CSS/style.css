@@ -1333,7 +1333,20 @@ footer {
 
 @media (max-width: 425px) {
     #iconTel, #iconEmail {
-        width: 100%;
+        width: 7%;
+    }
+
+    .txtRedeSocial, #contato {
+        font-size: 150%;
+    }
+
+    .littleRedeSocial {
+        margin-top: 0.8em;
+    }
+
+    #iconFacebook, #iconInstagram, #iconLinkedin {
+        width: 5.8vh;
+        height: 5.8vh;
     }
 }
 
@@ -1341,6 +1354,19 @@ footer {
 
     .redeSocial {
         margin-top: 4%;
+    }
+
+    .txtRedeSocial, #contato {
+        font-size: 145%;
+    }
+
+    .littleRedeSocial {
+        margin-top: 0.8em;
+    }
+
+    #iconFacebook, #iconInstagram, #iconLinkedin {
+        width: 5.5vh;
+        height: 5.5vh;
     }
 }
 
@@ -1350,4 +1376,7 @@ footer {
         margin-top: 5%;
     }
 
+    .txtRedeSocial, #contato {
+        font-size: 140%;
+    }
 }
