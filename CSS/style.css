@@ -424,7 +424,6 @@ footer {
 
 #containerFooter {
     width: 100%;
-    height: 95%;
     align-items: center;
     justify-content: space-between;
     display: flex;
@@ -447,8 +446,8 @@ footer {
 }
 
 .imgFooter {
-    width: 11vw;
-    height: 24vh;
+    width: 10vw;
+    height: 10vw;
     margin-left: 3em;
 }
 
@@ -509,23 +508,32 @@ footer {
 }
 
 #iconFacebook, #iconInstagram, #iconLinkedin {
-    width: 90%;
-    height: 90%;
+    width: 8vh;
+    height: 8vh;
 }
 
 .littleRedeSocial {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-top: 2em;
 }
 
 .facebook, .instagram, .linkedin {
     width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .containerRedeSocial {
     height: 62%;
     width: 100%;
+}
+
+.aIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .redeSocial {
@@ -735,9 +743,9 @@ footer {
 
 #txtDevs {
     text-align: center;
-    font-size: 4vh;
+    font-size: 140%;
     color: #2ae863;
-    margin-top: 1em;
+    margin-top: 0.8em;
     padding-bottom: 0.5em;
 }
 
@@ -760,12 +768,13 @@ footer {
 .developer {
     display: flex;
     align-items: center;
-    margin: 0 10px;
+    flex-direction: column-reverse;
+    margin: 0 3vw;
 }
 
 .social-icon {
-    width: 6vh;
-    height: 6vh;
+    width: 5vh;
+    height: 5vh;
     cursor: pointer;
     margin-left: 5px;
 }
@@ -793,7 +802,16 @@ footer {
     display: none;
 }
 
-@media screen and (max-width: 1700px) {
+.divIconDev {
+    margin-top: 1vh;
+}
+
+@media screen and (max-width: 768px) {
+
+    .facebook, .instagram, .linkedin {
+        margin: 0 3vw 0 3vw;
+    }
+
     #grandContainerInfo {
         display: none;
     }
@@ -813,6 +831,8 @@ footer {
     #toggleElement {
         height: 4.2vh;
     }
+
+
 
     #div2 {
         display: none;
@@ -1016,8 +1036,11 @@ footer {
     #contato {
         color: #2ae863;
         margin-bottom: 0.7em;
-        font-size: 30px;
         text-align: center;
+    }
+
+    #contato, .txtRedeSocial {
+        font-size: 180%;
     }
 
     .txtEmailTel {
@@ -1070,8 +1093,8 @@ footer {
     }
 
     #iconFacebook, #iconInstagram, #iconLinkedin {
-        width: 93%;
-        height: 93%;
+        width: 8vh;
+        height: 8vh;
     }
 
     .littleRedeSocial::after {
@@ -1081,10 +1104,9 @@ footer {
     }
 
     .littleRedeSocial {
-        width: 60%;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
     }
 
     .containerRedeSocial {
@@ -1107,18 +1129,18 @@ footer {
     .txtRedeSocial {
         color: #2ae863;
         margin-left: 0.1em;
-        font-size: 30px;
         text-align: center;
     }
 
     #txtDevs {
-        font-size: 2vh;
+        font-size: 100%;
     }
 
-    .social-icon {
-        width: 3vh;
-        height: 3vh;
+    .webIconDev {
+        display: none;
     }
+
+
 
     .carousel-container {
         border: solid 2px #000000;
@@ -1233,6 +1255,8 @@ footer {
         margin-top: 46vh;
     }
 }
+
+@media (max-width: 768px) {}
 
 @media (max-width: 535px) and (max-width: 425px) {
 
