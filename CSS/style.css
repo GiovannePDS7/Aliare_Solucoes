@@ -239,15 +239,18 @@ header {
     align-items: center;
     justify-content: center;
     display: flex;
-    height: 26em;
+
     width: 100%;
     background: #000;
+    flex-wrap: wrap;
 }
 
 #containerLeft, #containerCenter, #containerRight {
     display: inline-flex;
-    width: 30%;
-    height: 80%;
+    min-width: 30%;
+    height: 46.4vh;
+    overflow: hidden;
+    margin: 1.8vw 0;
 }
 
 #littleContainerLeft, #littleContainerCenter, #littleContainerRight {
@@ -258,11 +261,15 @@ header {
     border-radius: 20px;
 }
 
+#tituloInfo1 {
+    margin-left: 2.6vw;
+}
+
 .tituloInfo {
     color: #fff;
     font-size: 190%;
     margin-top: 0.8em;
-    margin-left: 1.2em;
+    margin-left: 2.3vw;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -309,7 +316,7 @@ header {
     width: 150%;
     height: 200%;
     margin-top: 1em;
-    margin-left: 2.1em;
+    margin-left: 2vw;
     justify-content: center;
     align-items: center;
 }
@@ -870,7 +877,14 @@ footer {
     .liFooter {
         font-size: 95%;
     }
+
+    #containerLeft, #containerCenter, #containerRight {
+        height: 40vh;
+        min-width: 40%;
+        margin: 3vw;
+    }
 }
+
 
 @media screen and (max-width: 768px) {
 
@@ -897,8 +911,6 @@ footer {
     #toggleElement {
         height: 4.2vh;
     }
-
-
 
     #div2 {
         display: none;
