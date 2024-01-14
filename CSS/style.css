@@ -887,6 +887,25 @@ footer {
 
 
 @media screen and (max-width: 768px) {
+    #containerLeft, #containerCenter, #containerRight {
+        overflow: visible;
+    }
+
+
+    #littleContainerLeft, #littleContainerCenter, #littleContainerRight {
+        margin-left: 1.4em;
+        height: 100%;
+        width: 2em;
+        border-radius: 20px;
+    }
+
+    #containerLeft, #containerCenter, #containerRight {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
 
     .facebook, .instagram, .linkedin {
         margin: 0 3vw 0 3vw;
