@@ -886,6 +886,18 @@ footer {
     }
 }
 
+@media screen and (max-width: 1023px) {
+    #Parceiros {
+        background-image: url(../imagens/fundo.png);
+        background-repeat: no-repeat;
+    }
+
+    #containerParceiros {
+        background: none;
+    }
+
+}
+
 
 @media screen and (max-width: 768px) {
     #containerLeft, #containerCenter, #containerRight {
@@ -1023,7 +1035,8 @@ footer {
     }
 
     #Parceiros {
-        background: none;
+        background-image: url(../imagens/fundo.png);
+        background-repeat: no-repeat;
         width: 100%;
         margin-bottom: 3.5vh;
     }
@@ -1332,7 +1345,6 @@ footer {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        background-image: url(../imagens/fundo.png);
         background-repeat: no-repeat;
     }
 
@@ -1347,6 +1359,7 @@ footer {
 }
 
 @media screen and (max-width: 810px) {
+
     #ImgHome {
         margin-top: 46vh;
     }
