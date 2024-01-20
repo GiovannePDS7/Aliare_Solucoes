@@ -243,13 +243,12 @@ header {
     display: flex;
     padding: 0.5em 0 0.5em 0;
     width: 100%;
-
     flex-wrap: wrap;
 }
 
 #containerLeft, #containerCenter, #containerRight {
     display: inline-flex;
-    min-width: 30%;
+    width: 30%;
     height: 46.4vh;
     overflow: hidden;
     margin: 2vw 0;
@@ -861,7 +860,8 @@ footer {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
+
     #contato {
         font-size: 3.8vh;
     }
@@ -888,7 +888,7 @@ footer {
 
     #containerLeft, #containerCenter, #containerRight {
         height: 40vh;
-        min-width: 33%;
+        width: 20em;
     }
 
     #icon-whats {
@@ -899,6 +899,12 @@ footer {
 
 
 @media screen and (max-width: 768px) {
+
+    #grandContainerInfo {
+        flex-wrap: wrap;
+    }
+
+
     #video {
         width: 70%;
         height: 60%;
@@ -918,7 +924,6 @@ footer {
     }
 
     #containerLeft, #containerCenter, #containerRight {
-        width: 45%;
         display: flex;
         align-items: center;
         justify-content: flex-start;
