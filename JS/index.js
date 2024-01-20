@@ -104,13 +104,6 @@ const Linha1 = document.getElementById('linhaInfo1');
 const Linha2 = document.getElementById('linhaInfo2');
 const Linha3 = document.getElementById('linhaInfo3');
 
-const tituloInfo1 = document.getElementById('tituloInfo1');
-const tituloInfo2 = document.getElementById('tituloInfo2');
-const tituloInfo3 = document.getElementById('tituloInfo3');
-
-const txtInfo1 = document.getElementById('txtInfo1');
-const txtInfo2 = document.getElementById('txtInfo2');
-const txtInfo3 = document.getElementById('txtInfo3');
 let widthScreen = window.innerWidth;
 
 ContainerLeft.addEventListener('mouseover', function () {
@@ -118,8 +111,6 @@ ContainerLeft.addEventListener('mouseover', function () {
         LContainerLeft.style.width = '100%';
         LContainerLeft.style.borderRadius = '2%';
         Linha1.style.background = '#000';
-        tituloInfo1.style.color = '#000';
-        txtInfo1.style.color = '#000';
     }
 });
 ContainerLeft.addEventListener('mouseleave', function () {
@@ -127,8 +118,6 @@ ContainerLeft.addEventListener('mouseleave', function () {
         LContainerLeft.style.width = width;
         LContainerLeft.style.borderRadius = BRadius;
         Linha1.style.background = 'linear-gradient(to bottom, #30B0A4, #46D1C4, #57D8CC, #57E6D9)'
-        tituloInfo1.style.color = '#fff'
-        txtInfo1.style.color = '#fff';
     }
 });
 
@@ -137,8 +126,6 @@ ContainerCenter.addEventListener('mouseover', function () {
         LContainerCenter.style.width = '100%';
         LContainerCenter.style.borderRadius = '2%';
         Linha2.style.background = '#000';
-        tituloInfo2.style.color = '#000';
-        txtInfo2.style.color = '#000';
     }
 });
 ContainerCenter.addEventListener('mouseleave', function () {
@@ -146,8 +133,6 @@ ContainerCenter.addEventListener('mouseleave', function () {
         LContainerCenter.style.width = width;
         LContainerCenter.style.borderRadius = BRadius;
         Linha2.style.background = 'linear-gradient(to bottom, #497BB2, #6495CB, #80AFE1, #88B6E8)';
-        tituloInfo2.style.color = '#fff';
-        txtInfo2.style.color = '#fff';
     }
 });
 
@@ -156,16 +141,12 @@ ContainerRight.addEventListener('mouseover', function () {
         LContainerRight.style.width = '100%';
         LContainerRight.style.borderRadius = '2%';
         Linha3.style.background = '#000';
-        tituloInfo3.style.color = '#000';
-        txtInfo3.style.color = '#000';
     }
 });
 ContainerRight.addEventListener('mouseleave', function () {
     if (widthScreen > 690) {
         LContainerRight.style.width = width;
         LContainerRight.style.borderRadius = BRadius;
-        Linha3.style.background = 'linear-gradient(to bottom, #76C5F0, #82CEF8, #8AD1F8, #9EDDFF)';
-        tituloInfo3.style.color = '#fff';
-        txtInfo3.style.color = '#fff';
+        Linha3.style.background = 'linear-gradient(to bottom, #76C5F0, #82CEF8, #8AD1F8, #9EDDFF)';;
     }
 });
