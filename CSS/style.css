@@ -1084,7 +1084,7 @@ footer {
     }
 
     #projetoRight {
-        margin-top: 2%;
+        margin-top: 3%;
         width: 100%;
         height: 40vh;
         display: flex;
@@ -1093,7 +1093,7 @@ footer {
     }
 
     #containerProjeto {
-        margin-top: 2%;
+        margin-top: 3%;
         overflow: hidden;
         position: none;
         max-width: 100%;
@@ -1375,16 +1375,32 @@ footer {
 
 }
 
+
+@media (max-width:640px) {
+    #textProjeto {
+        font-size: 2.8vw;
+    }
+}
+
 @media (max-width: 610px) {
     .imgCarousel {
         width: 30vw;
         height: 30vw;
     }
-}
 
-@media (max-width:640px) {
     #textProjeto {
         font-size: 2.7vw;
+    }
+
+    #containerProjeto {
+        margin-top: 4%;
+    }
+}
+
+@media (max-width: 570px) {
+
+    #textProjeto {
+        font-size: 2.9vw;
     }
 }
 
@@ -1400,7 +1416,22 @@ footer {
     #textProjeto {
         font-size: 3vw;
     }
+
+    #containerProjeto {
+        margin-top: 4%;
+    }
+
+    #projetoRight {
+        margin-top: 4%;
+    }
 }
+
+@media (max-width: 500px) {
+    #textProjeto {
+        font-size: 3.28vw;
+    }
+}
+
 
 @media (max-width: 515px) {
 
@@ -1421,16 +1452,24 @@ footer {
 
 @media (max-width: 450px) {
     #projetoRight {
-        margin-top: 10%;
+        margin-top: 3%;
     }
 
     #textProjeto {
-        font-size: 3.7vw;
+        font-size: 3.28vw;
     }
 
     #containerProjeto {
-        margin-top: 10%;
+        margin-top: 3%;
     }
+}
+
+@media (max-width: 430px) {
+
+    #textProjeto {
+        font-size: 3.39vw;
+    }
+
 }
 
 @media (max-width: 425px) {
@@ -1465,10 +1504,21 @@ footer {
     }
 }
 
-@media (max-width: 375px) {
-    #projetoRight {
-        margin-top: 3%;
+@media (max-width: 430px) {
+    #textProjeto {
+        font-size: 3.38vw;
     }
+
+}
+
+@media (max-width: 390px) {
+    #textProjeto {
+        font-size: 3.48vw;
+    }
+
+}
+
+@media (max-width: 375px) {
 
     #containerProjeto {
         margin-top: 0;
@@ -1498,6 +1548,30 @@ footer {
         width: 5.5vh;
         height: 5.5vh;
     }
+
+    #textProjeto {
+        font-size: 3.88vw;
+    }
+
+}
+
+@media (max-width: 335px) {
+
+    #projetoRight {
+        margin-top: 0;
+    }
+
+
+    #containerProjeto {
+        margin-top: 0;
+    }
+
+
+    #textProjeto {
+        font-size: 3.92vw;
+    }
+
+
 }
 
 @media (max-width: 320px) {
@@ -1515,5 +1589,9 @@ footer {
 
     .txtRedeSocial, #contato {
         font-size: 140%;
+    }
+
+    #textProjeto {
+        font-size: 3.92vw
     }
 }
