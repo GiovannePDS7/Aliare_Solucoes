@@ -672,7 +672,6 @@ footer {
 
 #textProjeto {
     overflow: hidden;
-    height: 100%;
     color: #000000;
     font-size: 20px;
     line-height: 1.8;
@@ -1051,7 +1050,7 @@ footer {
     }
 
     .title {
-        font-size: 5vh;
+        font-size: 220%;
         padding-top: 0.5em;
         margin-left: 0;
         font-family: 'Anton';
@@ -1080,7 +1079,7 @@ footer {
         display: flex;
         justify-content: center;
         width: 100%;
-        height: 40vh;
+        height: 70vw;
     }
 
     #projetoRight {
@@ -1097,7 +1096,7 @@ footer {
         overflow: hidden;
         position: none;
         max-width: 100%;
-        height: 40vh;
+        height: 100%;
         transform: none;
         transform-origin: none;
         border-radius: 0;
@@ -1116,7 +1115,7 @@ footer {
 
     #textProjeto {
         color: #000000;
-        font-size: 2.5vw;
+        font-size: 3.92vw;
         line-height: 1.8;
         margin-top: 0;
     }
@@ -1375,32 +1374,15 @@ footer {
 
 }
 
-
-@media (max-width:640px) {
-    #textProjeto {
-        font-size: 2.8vw;
-    }
-}
-
 @media (max-width: 610px) {
     .imgCarousel {
         width: 30vw;
         height: 30vw;
     }
 
-    #textProjeto {
-        font-size: 2.7vw;
-    }
 
     #containerProjeto {
         margin-top: 4%;
-    }
-}
-
-@media (max-width: 570px) {
-
-    #textProjeto {
-        font-size: 2.9vw;
     }
 }
 
@@ -1413,12 +1395,9 @@ footer {
 }
 
 @media (max-width: 550px) {
-    #textProjeto {
-        font-size: 3vw;
-    }
 
     #containerProjeto {
-        margin-top: 4%;
+        margin-top: 0;
     }
 
     #projetoRight {
@@ -1427,60 +1406,38 @@ footer {
 }
 
 @media (max-width: 500px) {
+
     #textProjeto {
-        font-size: 3.28vw;
-    }
-}
-
-
-@media (max-width: 515px) {
-
-    #containerProjeto {
-        margin-top: 4%;
+        font-size: 4.2vw;
     }
 
-    #projetoRight {
-        margin-top: 4%;
+    #textProjeto {
+        font-size: 3.94vw;
     }
-}
 
-@media (max-width: 500px) {
-    #containerParceiros {
-        margin-top: 2%;
-    }
 }
 
 @media (max-width: 450px) {
+    #projetoLeft {
+        height: 85vw;
+    }
+
     #projetoRight {
         margin-top: 3%;
     }
 
     #textProjeto {
-        font-size: 3.28vw;
+        font-size: 4.2vw;
     }
+
 
     #containerProjeto {
         margin-top: 3%;
     }
-}
-
-@media (max-width: 430px) {
-
-    #textProjeto {
-        font-size: 3.39vw;
-    }
-
 }
 
 @media (max-width: 425px) {
 
-    #containerParceiros {
-        margin-top: 0;
-    }
-
-    .tituloInfo {
-        margin-left: 4.5vw;
-    }
 
     #containerLeft, #containerCenter, #containerRight {
         width: 75%;
@@ -1504,29 +1461,8 @@ footer {
     }
 }
 
-@media (max-width: 430px) {
-    #textProjeto {
-        font-size: 3.38vw;
-    }
-
-}
-
-@media (max-width: 390px) {
-    #textProjeto {
-        font-size: 4.2vw;
-    }
-
-}
-
 @media (max-width: 375px) {
 
-    #containerProjeto {
-        margin-top: 0;
-    }
-
-    .tituloInfo {
-        margin-left: 4.8vw;
-    }
 
     #containerLeft, #containerCenter, #containerRight {
         width: 85%;
@@ -1549,29 +1485,6 @@ footer {
         height: 5.5vh;
     }
 
-    #textProjeto {
-        font-size: 3.88vw;
-    }
-
-}
-
-@media (max-width: 335px) {
-
-    #projetoRight {
-        margin-top: 0;
-    }
-
-
-    #containerProjeto {
-        margin-top: 0;
-    }
-
-
-    #textProjeto {
-        font-size: 3.92vw;
-    }
-
-
 }
 
 @media (max-width: 320px) {
@@ -1589,9 +1502,5 @@ footer {
 
     .txtRedeSocial, #contato {
         font-size: 140%;
-    }
-
-    #textProjeto {
-        font-size: 3.92vw
     }
 }
