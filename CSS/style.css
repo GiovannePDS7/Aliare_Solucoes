@@ -671,6 +671,7 @@ footer {
 }
 
 #textProjeto {
+    overflow: hidden;
     color: #000000;
     font-size: 20px;
     line-height: 1.8;
