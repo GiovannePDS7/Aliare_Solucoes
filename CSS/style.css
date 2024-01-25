@@ -161,20 +161,20 @@ header {
 
 #linha1 {
     background: #000;
-    width: 3.12em;
-    height: 4.6px;
+    width: 2.7em;
+    height: 3px;
 }
 
 #linha2 {
     background: #000;
     width: 2.3em;
-    height: 4.6px;
+    height: 3px;
 }
 
 #linha3 {
     background: #000;
     width: 3.9em;
-    height: 4.6px;
+    height: 3px;
 }
 
 #sobreNos {
@@ -869,7 +869,7 @@ footer {
 @media (max-width: 1023px) {
     #linha3 {
         height: 2px;
-        margin-right: 11%;
+        margin-right: 12vh;
     }
 
     #contato {
@@ -1059,7 +1059,7 @@ footer {
     }
 
     .title {
-        font-size: 5.6vw;
+        font-size: 6vw;
         padding-top: 0.5em;
         margin-left: 0;
         font-family: 'Anton';
@@ -1070,10 +1070,14 @@ footer {
         flex-direction: column;
     }
 
+    #linha1 {
+        height: 2px;
+        margin-right: 11vh;
+    }
+
     #linha2 {
         height: 2px;
-        margin-right: 7vh;
-        display: block;
+        margin-right: 10vh;
     }
 
     #containerProj {
@@ -1355,7 +1359,7 @@ footer {
     }
 
     #containerParceiros {
-        margin-top: 4%;
+        margin-top: 3%;
         width: 100%;
         height: 50vh;
         display: flex;
@@ -1426,7 +1430,12 @@ footer {
 
 }
 
+
 @media (max-width: 450px) {
+    #containerParceiros {
+        height: 40vh;
+    }
+
     #projetoLeft {
         height: 85vw;
     }
@@ -1446,7 +1455,6 @@ footer {
 }
 
 @media (max-width: 425px) {
-
 
     #containerLeft, #containerCenter, #containerRight {
         width: 75%;
@@ -1497,9 +1505,6 @@ footer {
 }
 
 @media (max-width: 320px) {
-    #containerParceiros {
-        height: 40vh;
-    }
 
     #containerLeft, #containerCenter, #containerRight {
         width: 100%;
