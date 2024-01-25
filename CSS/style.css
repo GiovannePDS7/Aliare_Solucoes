@@ -867,9 +867,13 @@ footer {
 }
 
 @media (max-width: 1023px) {
+    #QmSomos {
+        margin-top: 2.5%;
+    }
+
     #linha3 {
         height: 2px;
-        margin-right: 12vh;
+        margin-right: 14vw;
     }
 
     #contato {
@@ -1072,12 +1076,12 @@ footer {
 
     #linha1 {
         height: 2px;
-        margin-right: 11vh;
+        margin-right: 11vw;
     }
 
     #linha2 {
         height: 2px;
-        margin-right: 10vh;
+        margin-right: 11vw;
     }
 
     #containerProj {
