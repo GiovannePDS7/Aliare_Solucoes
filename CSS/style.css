@@ -254,7 +254,7 @@ header {
 #containerLeft, #containerCenter, #containerRight {
     display: inline-flex;
     width: 30%;
-    height: 46.4vh;
+    height: 28vw;
     overflow: hidden;
     margin: 2vw 0;
 }
@@ -269,8 +269,8 @@ header {
 
 .tituloInfo {
     color: #000;
-    font-size: 190%;
-    margin-top: 0.8em;
+    font-size: 225%;
+    margin-top: 0.5em;
     margin-left: 1.4vw;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -315,8 +315,9 @@ header {
 }
 
 .divTxtInfo {
-    width: 150%;
-    height: 200%;
+    width: 22vw;
+    height: 22vw;
+    overflow: hidden;
     margin-top: 1em;
     margin-left: 1.2em;
     justify-content: center;
@@ -866,7 +867,35 @@ footer {
     }
 }
 
+@media (max-width: 2559px) {
+    .txtInfo {
+        font-size: 170%;
+    }
+}
+
+@media (max-width:1439px) {
+    .txtInfo {
+        font-size: 135%;
+    }
+}
+
+@media (max-width:1299px) {
+    .txtInfo {
+        font-size: 115%;
+    }
+}
+
 @media (max-width: 1023px) {
+    .divTxtInfo {
+        overflow: visible;
+        width: 150%;
+    }
+
+    .txtInfo {
+        margin-right: 0;
+        font-size: 110%;
+    }
+
     #QmSomos {
         margin-top: 2.5%;
     }
@@ -909,10 +938,10 @@ footer {
         width: 60px;
     }
 
-}
-
-
-@media screen and (max-width: 1023px) {
+    .tituloInfo {
+        margin: 0 0 0 4vw;
+        font-size: 4.2vw;
+    }
 
     #grandContainerInfo {
         flex-wrap: wrap;
@@ -921,11 +950,6 @@ footer {
     #video {
         width: 70%;
         height: 60%;
-    }
-
-    .tituloInfo {
-        margin-left: 2.8vw;
-        font-size: 6.5vw;
     }
 
     #containerLeft, #containerCenter, #containerRight {
@@ -1391,6 +1415,13 @@ footer {
 
 }
 
+@media (max-width: 640px) {
+    .tituloInfo {
+        margin-left: 6vw;
+        font-size: 5.5vw;
+    }
+}
+
 @media (max-width: 610px) {
 
 
@@ -1505,10 +1536,6 @@ footer {
 }
 
 @media (max-width: 320px) {
-    .tituloInfo {
-        margin-left: 6vw;
-        font-size: 6.5vw;
-    }
 
     #linhaInfo1, #linhaInfo2, #linhaInfo3 {
         width: 3.4em;
