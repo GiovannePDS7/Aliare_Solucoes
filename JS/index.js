@@ -57,22 +57,36 @@ const projetoSection = document.getElementById('projeto');
 const parceirosSection = document.getElementById('Parceiros');
 const qmsomosSection = document.getElementById('QmSomos');
 
+const liFooterParceiros = document.getElementById('liFooterParceiros');
+const liFooterProjetos = document.getElementById('liFooterProjetos');
+const liFooterQmSomos = document.getElementById('liFooterQmSomos');
+
 document.addEventListener('DOMContentLoaded', function () {
-    liProjetos.addEventListener('click', function () {
-        projetoSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        window.scrollBy(0, -headerHeight + 1);
-    });
     liParceiros.addEventListener('click', function () {
         parceirosSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        window.scrollBy(0, -headerHeight + 1);
+    });
+    liProjetos.addEventListener('click', function () {
+        projetoSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
         window.scrollBy(0, -headerHeight + 1);
     });
     liQmSomos.addEventListener('click', function () {
         qmsomosSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
         window.scrollBy(0, -headerHeight + 1);
     });
-
+    liFooterParceiros.addEventListener('click', function () {
+        parceirosSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        window.scrollBy(0, -headerHeight + 1);
+    });
+    liFooterProjetos.addEventListener('click', function () {
+        projetoSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        window.scrollBy(0, -headerHeight + 1);
+    });
+    liFooterQmSomos.addEventListener('click', function () {
+        qmsomosSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        window.scrollBy(0, -headerHeight + 1);
+    });
 });
-
 
 let currentIndex = 0;
 

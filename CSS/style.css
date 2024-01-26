@@ -869,7 +869,7 @@ footer {
 
 @media (max-width: 2562px) {
     .txtInfo {
-        font-size: 245%;
+        font-size: 250%;
     }
 
     .tituloInfo {
@@ -879,7 +879,7 @@ footer {
 
 @media (max-width: 2264px) {
     .txtInfo {
-        font-size: 245%;
+        font-size: 230%;
     }
 
     .tituloInfo {
@@ -889,7 +889,7 @@ footer {
 
 @media (max-width: 2049px) {
     .txtInfo {
-        font-size: 235%;
+        font-size: 204%;
     }
 
     .tituloInfo {
@@ -899,7 +899,7 @@ footer {
 
 @media (max-width: 1849px) {
     .txtInfo {
-        font-size: 205%;
+        font-size: 181.5%;
     }
 
     .tituloInfo {
@@ -909,7 +909,7 @@ footer {
 
 @media (max-width: 1644px) {
     .txtInfo {
-        font-size: 178%;
+        font-size: 160%;
     }
 
     .tituloInfo {
@@ -925,7 +925,7 @@ footer {
 
 @media (max-width:1299px) {
     .txtInfo {
-        font-size: 115%;
+        font-size: 110%;
     }
 }
 
@@ -989,6 +989,7 @@ footer {
 
     #grandContainerInfo {
         flex-wrap: wrap;
+        margin-bottom: 5%;
     }
 
     #video {
@@ -1451,7 +1452,6 @@ footer {
 }
 
 @media screen and (max-width: 810px) {
-
     #ImgHome {
         margin-top: 46vh;
     }
