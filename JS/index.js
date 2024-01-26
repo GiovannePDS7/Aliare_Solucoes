@@ -47,16 +47,30 @@ function addTextFrame() {
 }
 addTextFrame();
 
-const liProjetos = document.getElementById('liProjetos');
 const header = document.querySelector('header');
-const projetoSection = document.getElementById('projeto');
 const headerHeight = header.offsetHeight;
+
+const liProjetos = document.getElementById('liProjetos');
+const liParceiros = document.getElementById('liParceiros');
+const liQmSomos = document.getElementById('liQmSomos');
+const projetoSection = document.getElementById('projeto');
+const parceirosSection = document.getElementById('Parceiros');
+const qmsomosSection = document.getElementById('QmSomos');
 
 document.addEventListener('DOMContentLoaded', function () {
     liProjetos.addEventListener('click', function () {
         projetoSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
         window.scrollBy(0, -headerHeight + 1);
     });
+    liParceiros.addEventListener('click', function () {
+        parceirosSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        window.scrollBy(0, -headerHeight + 1);
+    });
+    liQmSomos.addEventListener('click', function () {
+        qmsomosSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        window.scrollBy(0, -headerHeight + 1);
+    });
+
 });
 
 
