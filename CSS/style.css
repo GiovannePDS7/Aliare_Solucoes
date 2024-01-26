@@ -867,9 +867,53 @@ footer {
     }
 }
 
-@media (max-width: 2559px) {
+@media (max-width: 2562px) {
     .txtInfo {
-        font-size: 170%;
+        font-size: 245%;
+    }
+
+    .tituloInfo {
+        font-size: 378%;
+    }
+}
+
+@media (max-width: 2264px) {
+    .txtInfo {
+        font-size: 245%;
+    }
+
+    .tituloInfo {
+        font-size: 378%;
+    }
+}
+
+@media (max-width: 2049px) {
+    .txtInfo {
+        font-size: 235%;
+    }
+
+    .tituloInfo {
+        font-size: 345%;
+    }
+}
+
+@media (max-width: 1849px) {
+    .txtInfo {
+        font-size: 205%;
+    }
+
+    .tituloInfo {
+        font-size: 320%;
+    }
+}
+
+@media (max-width: 1644px) {
+    .txtInfo {
+        font-size: 178%;
+    }
+
+    .tituloInfo {
+        font-size: 285%;
     }
 }
 
