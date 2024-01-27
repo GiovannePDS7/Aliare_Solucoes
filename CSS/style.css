@@ -254,7 +254,6 @@ header {
 #containerLeft, #containerCenter, #containerRight {
     display: inline-flex;
     width: 30%;
-    height: 28vw;
     overflow: hidden;
     margin: 2vw 0;
 }
@@ -344,7 +343,7 @@ header {
 
 #containerParceiros {
     width: 100%;
-    height: 68.5vh;
+    height: 30vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -353,8 +352,11 @@ header {
 .littleContainerParceiros {
     cursor: pointer;
     width: 28%;
-    transition: 0.2s ease-in-out;
-    height: 32vh;
+    transition: 0.2s ease-in;
+    height: 13vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 
@@ -364,7 +366,7 @@ header {
 
 
 .littleContainerParceiros:hover .cardText {
-    height: 32vh;
+    height: 13vw;
 }
 
 .littleContainerParceiros:hover .textParceiros {
@@ -380,6 +382,7 @@ header {
 }
 
 .cardImg {
+    padding: 1vw 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -388,7 +391,7 @@ header {
             #ffffff, #f0faff, #e6e6e6,
             #e6e6e6, #dddddd, #d8d8d8,
             #c4c4c4, #696969);
-    height: 30vh;
+
     border: solid 2px #000000;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -408,7 +411,7 @@ header {
     width: 100%;
     background: #000000;
     text-align: center;
-    transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in;
     overflow: hidden;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -670,7 +673,7 @@ footer {
 #containerProjeto {
     position: relative;
     width: 90%;
-    height: 60vh;
+    height: 24vw;
     transform-origin: bottom left;
     border-radius: 5px;
     display: flex;
@@ -700,7 +703,7 @@ footer {
 #video {
     border-radius: 5px;
     width: 85%;
-    height: 70%;
+    height: 90%;
 }
 
 #litterContainerDevs {
@@ -838,7 +841,7 @@ footer {
     }
 
     #textProjeto {
-        font-size: 225%;
+        font-size: 305%;
     }
 
 
@@ -857,6 +860,16 @@ footer {
 
     .liFooter {
         font-size: 157%;
+    }
+
+    #containerLeft, #containerCenter, #containerRight {
+        height: 25vw;
+    }
+}
+
+@media (max-width:2334px) {
+    #containerLeft, #containerCenter, #containerRight {
+        height: 28.3vw;
     }
 }
 
@@ -890,7 +903,7 @@ footer {
 
 @media (max-width: 2264px) {
     .txtInfo {
-        font-size: 230%;
+        font-size: 225%;
     }
 
     .tituloInfo {
@@ -900,7 +913,7 @@ footer {
 
 @media (max-width: 2049px) {
     .txtInfo {
-        font-size: 204%;
+        font-size: 202%;
     }
 
     .tituloInfo {
@@ -910,7 +923,7 @@ footer {
 
 @media (max-width: 1849px) {
     .txtInfo {
-        font-size: 181.5%;
+        font-size: 180%;
     }
 
     .tituloInfo {
@@ -943,38 +956,50 @@ footer {
 
 @media (max-width: 2271px) {
     #textProjeto {
-        font-size: 215%;
+        font-size: 260%;
     }
 }
 
 
 @media (max-width: 1971px) {
     #textProjeto {
-        font-size: 206%;
+        font-size: 240%;
     }
 }
 
 @media (max-width: 1800px) {
     #textProjeto {
-        font-size: 188%;
+        font-size: 220%;
     }
 }
 
 @media (max-width: 1664px) {
     #textProjeto {
-        font-size: 175%;
+        font-size: 195%;
     }
 }
 
 @media (max-width: 1500px) {
     #textProjeto {
-        font-size: 158%;
+        font-size: 170%;
+    }
+}
+
+@media (max-width: 1259px) {
+    #textProjeto {
+        font-size: 160%;
     }
 }
 
 @media (max-width: 1190px) {
     #textProjeto {
         font-size: 145%;
+    }
+}
+
+@media (max-width: 1090px) {
+    #textProjeto {
+        font-size: 135%;
     }
 }
 
