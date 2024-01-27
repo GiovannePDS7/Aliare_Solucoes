@@ -1016,9 +1016,8 @@ footer {
         margin-top: 2.5%;
     }
 
-    #linha3 {
-        height: 2px;
-        margin-right: 14vw;
+    #linha1, #linha2, #linha3 {
+       display: none;
     }
 
     #contato {
@@ -1213,17 +1212,6 @@ footer {
         align-items: center;
         flex-direction: column;
     }
-
-    #linha1 {
-        height: 2px;
-        margin-right: 11vw;
-    }
-
-    #linha2 {
-        height: 2px;
-        margin-right: 11vw;
-    }
-
     #containerProj {
         position: none;
 
