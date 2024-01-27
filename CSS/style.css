@@ -323,7 +323,7 @@ header {
 }
 
 .txtInfo {
-    text-indent: 8px;
+    text-indent: 1vw;
     color: #000000;
 }
 
@@ -1206,7 +1206,7 @@ footer {
     }
 
     .title {
-        font-size: 7.2vw;
+        font-size: 10vw;
         padding-top: 0.5em;
         margin: 6% 0;
         text-align: center;
@@ -1609,7 +1609,7 @@ footer {
 
 @media (max-width: 299px) {
     .txtInfo {
-        font-size: 80%;
+        font-size: 70%;
     }
 }
 
@@ -1630,12 +1630,11 @@ footer {
 @media (max-width: 640px) {
     .tituloInfo {
         margin-left: 6vw;
+        font-size: 7.5vw;
     }
 }
 
 @media (max-width: 610px) {
-
-
     #containerProjeto {
         margin-top: 4%;
     }
