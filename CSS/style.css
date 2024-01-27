@@ -585,9 +585,11 @@ footer {
 
 #ImgHome {
     position: absolute;
-    width: 27vw;
-    height: 28.4vw;
     margin-top: 42.8vh;
+
+    width: 27vw;
+    height: 57vh;
+
     margin-left: 20%;
 }
 
@@ -646,7 +648,7 @@ footer {
 
 #containerProj {
     position: relative;
-
+    margin: 3% 0;
     width: 100%;
     display: flex;
 }
@@ -668,7 +670,7 @@ footer {
 #containerProjeto {
     position: relative;
     width: 90%;
-    height: 62vh;
+    height: 60vh;
     transform-origin: bottom left;
     border-radius: 5px;
     display: flex;
@@ -679,17 +681,13 @@ footer {
 #textProjeto {
     overflow: hidden;
     color: #000000;
-    font-size: 20px;
-    line-height: 1.8;
+    font-size: 145%;
+    line-height: 1.6;
+    text-indent: 8px;
 }
 
 #littleContainerProjeto {
     position: relative;
-    width: 90%;
-    height: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 #projetoRight {
@@ -826,7 +824,24 @@ footer {
     transform: translateY(-15%);
 }
 
-@media (max-width: 2560px) {
+@media (max-width: 2562px) {
+    #ImgHome {
+        width: 20vw;
+    }
+
+    .txtInfo {
+        font-size: 250%;
+    }
+
+    .tituloInfo {
+        font-size: 348%;
+    }
+
+    #textProjeto {
+        font-size: 225%;
+    }
+
+
     #contato {
         font-size: 3.2vh;
         margin-bottom: 0.5em;
@@ -842,6 +857,12 @@ footer {
 
     .liFooter {
         font-size: 157%;
+    }
+}
+
+@media (max-width: 2120px) {
+    #ImgHome {
+        width: 27vw;
     }
 }
 
@@ -864,16 +885,6 @@ footer {
 
     .liFooter {
         font-size: 105%;
-    }
-}
-
-@media (max-width: 2562px) {
-    .txtInfo {
-        font-size: 250%;
-    }
-
-    .tituloInfo {
-        font-size: 348%;
     }
 }
 
@@ -925,11 +936,50 @@ footer {
 
 @media (max-width:1299px) {
     .txtInfo {
-        font-size: 110%;
+        font-size: 109%;
+    }
+}
+
+
+@media (max-width: 2271px) {
+    #textProjeto {
+        font-size: 215%;
+    }
+}
+
+
+@media (max-width: 1971px) {
+    #textProjeto {
+        font-size: 206%;
+    }
+}
+
+@media (max-width: 1800px) {
+    #textProjeto {
+        font-size: 188%;
+    }
+}
+
+@media (max-width: 1664px) {
+    #textProjeto {
+        font-size: 175%;
+    }
+}
+
+@media (max-width: 1500px) {
+    #textProjeto {
+        font-size: 158%;
+    }
+}
+
+@media (max-width: 1190px) {
+    #textProjeto {
+        font-size: 145%;
     }
 }
 
 @media (max-width: 1023px) {
+
     .divTxtInfo {
         overflow: visible;
         width: 150%;
@@ -1134,7 +1184,7 @@ footer {
     .title {
         font-size: 7.2vw;
         padding-top: 0.5em;
-        margin-left: 0;
+        margin: 3% 0;
         font-family: 'Anton';
         text-align: center;
         display: flex;
