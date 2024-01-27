@@ -156,7 +156,7 @@ header {
     padding-top: 0.5em;
     margin-left: 1.2em;
     height: 2em;
-    font-family: 'Anton';
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #linha1 {
@@ -1210,7 +1210,6 @@ footer {
         font-size: 7.2vw;
         padding-top: 0.5em;
         margin: 3% 0;
-        font-family: 'Anton';
         text-align: center;
         display: flex;
         justify-content: center;
