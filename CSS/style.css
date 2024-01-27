@@ -133,7 +133,6 @@ header {
     width: 100%;
     color: #fff;
     text-decoration: none;
-
 }
 
 #aHeaderBtn:hover {
@@ -154,7 +153,6 @@ header {
     font-size: 3.8vw;
     padding-top: 0.5em;
     margin-left: 1.2em;
-    height: 2em;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -172,7 +170,7 @@ header {
 
 #linha3 {
     background: #000;
-    width: 3.9em;
+    width: 4em;
     height: 3px;
 }
 
