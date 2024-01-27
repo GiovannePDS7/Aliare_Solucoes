@@ -62,7 +62,6 @@ header {
 }
 
 .liHeader {
-    font-size: 97%;
     position: relative;
     list-style: none;
     cursor: pointer;
@@ -111,7 +110,7 @@ header {
 #ulHeader {
     justify-content: space-evenly;
     width: 100%;
-    font-size: 2.5vh;
+    font-size: 1.5vw;
     display: inline-flex;
 }
 
@@ -123,15 +122,15 @@ header {
 
 #aHeaderBtn {
     letter-spacing: 1px;
-    font-size: 2.8vh;
+    font-size: 1.4vw;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 10vh;
     background: var(--colorBG-span);
-    border-radius: 25vh;
-    width: 28vh;
+    border-radius: 10vw;
+    width: 100%;
     color: #fff;
     text-decoration: none;
 
@@ -152,7 +151,7 @@ header {
 }
 
 .title {
-    font-size: 6vh;
+    font-size: 3.8vw;
     padding-top: 0.5em;
     margin-left: 1.2em;
     height: 2em;
@@ -812,14 +811,14 @@ footer {
 
 #whats {
     position: fixed;
-    bottom: 15px;
-    right: 15px;
+    bottom: 1vw;
+    right: 1vw;
     z-index: 9999;
 }
 
 #icon-whats {
     cursor: pointer;
-    width: 75px;
+    width: 6.2vw;
     transition: 0.3s ease-in;
 }
 
@@ -1209,7 +1208,7 @@ footer {
     .title {
         font-size: 7.2vw;
         padding-top: 0.5em;
-        margin: 3% 0;
+        margin: 6% 0;
         text-align: center;
         display: flex;
         justify-content: center;
@@ -1525,6 +1524,102 @@ footer {
     }
 }
 
+
+@media (max-width: 959px) {
+    #containerLeft, #containerCenter, #containerRight {
+        height: 50vw;
+    }
+
+    .tituloInfo {
+        font-size: 7vw;
+    }
+
+    .txtInfo {
+        width: 85vw;
+        font-size: 200%;
+    }
+
+    #grandContainerInfo {
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    #containerLeft, #containerCenter, #containerRight {
+        width: 100%;
+    }
+
+    .divTxtInfo {
+        width: 0;
+    }
+}
+
+
+@media (max-width: 687px) {
+    .txtInfo {
+        font-size: 180%;
+    }
+}
+
+@media (max-width: 620px) {
+    .txtInfo {
+        font-size: 165%;
+    }
+}
+
+@media (max-width: 568px) {
+    .txtInfo {
+        font-size: 145%;
+    }
+}
+
+@media (max-width: 502px) {
+    .txtInfo {
+        font-size: 120%;
+        width: 80vw;
+    }
+}
+
+@media (max-width: 417px) {
+    .txtInfo {
+        font-size: 105%;
+    }
+}
+
+@media (max-width: 388px) {
+    .txtInfo {
+        font-size: 100%;
+    }
+
+    #littleContainerLeft, #littleContainerCenter, #littleContainerRight {
+        margin-left: 0.5em;
+    }
+}
+
+@media (max-width: 347px) {
+    .txtInfo {
+        font-size: 90%;
+    }
+}
+
+@media (max-width: 334px) {
+    .txtInfo {
+        font-size: 82%;
+    }
+}
+
+@media (max-width: 299px) {
+    .txtInfo {
+        font-size: 80%;
+    }
+}
+
+@media (max-width: 260px) {
+    .txtInfo {
+        font-size: 60%;
+    }
+}
+
+
 @media screen and (max-width: 810px) {
     #ImgHome {
         margin-top: 46vh;
@@ -1535,7 +1630,6 @@ footer {
 @media (max-width: 640px) {
     .tituloInfo {
         margin-left: 6vw;
-        font-size: 5.5vw;
     }
 }
 
@@ -1668,5 +1762,17 @@ footer {
 
     .txtRedeSocial, #contato {
         font-size: 140%;
+    }
+
+    .title {
+        font-size: 10vw;
+    }
+
+    .tituloInfo {
+        font-size: 7.5vw;
+    }
+
+    #textProjeto {
+        font-size: 4.5vw;
     }
 }
