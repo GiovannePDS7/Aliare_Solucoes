@@ -418,11 +418,11 @@ header {
 
 .textParceiros {
     text-indent: 8px;
-    text-align: start;
-    font-size: 0.9rem;
+    text-align: unset;
+    font-size: 1.1vw;
     overflow: hidden;
     color: #fff;
-    line-height: 1;
+    line-height: 1.2;
 }
 
 footer {
