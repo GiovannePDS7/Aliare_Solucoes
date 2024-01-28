@@ -178,3 +178,4 @@ ContainerRight.addEventListener('mouseleave', function () {
         Linha3.style.background = 'linear-gradient(to bottom, #76C5F0, #82CEF8, #8AD1F8, #9EDDFF)';;
     }
 });
+
