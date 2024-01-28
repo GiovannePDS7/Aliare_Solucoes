@@ -321,7 +321,6 @@ header {
 }
 
 .txtInfo {
-    text-indent: 1vw;
     color: #000000;
 }
 
@@ -415,7 +414,6 @@ header {
 }
 
 .textParceiros {
-    text-indent: 8px;
     text-align: unset;
     font-size: 1.1vw;
     overflow: hidden;
@@ -603,6 +601,7 @@ footer {
     height: 100vh;
     display: flex;
     align-items: center;
+
 }
 
 #containerFrame {
@@ -683,7 +682,6 @@ footer {
     color: #000000;
     font-size: 145%;
     line-height: 1.6;
-    text-indent: 8px;
 }
 
 #littleContainerProjeto {
@@ -825,7 +823,7 @@ footer {
 }
 
 #divTxtClientes {
-    margin-bottom: 2vw;
+    margin-bottom: 3vw;
 }
 
 #txtClientes {
@@ -1111,7 +1109,7 @@ footer {
 
     #grandContainerInfo {
         flex-wrap: wrap;
-        margin-bottom: 5%;
+        margin-bottom: 8vw;
     }
 
     #video {
