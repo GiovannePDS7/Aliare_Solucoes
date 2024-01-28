@@ -662,7 +662,6 @@ footer {
     display: flex;
     justify-content: center;
     width: 50%;
-    height: 100%;
 }
 
 
@@ -1050,6 +1049,10 @@ footer {
 }
 
 @media (max-width: 1023px) {
+    #txtClientes {
+
+        font-size: 4vw;
+    }
 
     .divTxtInfo {
         overflow: visible;
@@ -1254,7 +1257,7 @@ footer {
     .title {
         font-size: 10vw;
         padding-top: 0.5em;
-        margin: 6% 0;
+        margin: 2.5vw 0;
         text-align: center;
         display: flex;
         justify-content: center;
@@ -1274,7 +1277,7 @@ footer {
         display: flex;
         justify-content: center;
         width: 100%;
-        height: 70vw;
+        margin-bottom: 2vw;
     }
 
     #projetoRight {
@@ -1713,9 +1716,7 @@ footer {
         height: 40vh;
     }
 
-    #projetoLeft {
-        height: 85vw;
-    }
+
 
     #projetoRight {
         margin-top: 3%;
