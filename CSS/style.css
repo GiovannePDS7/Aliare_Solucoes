@@ -765,6 +765,10 @@ footer {
     margin-top: 4px;
 }
 
+#containerLeft, #containerCenter, #containerRight {
+    height: 28.3vw;
+}
+
 .developer {
     display: flex;
     align-items: center;
@@ -869,17 +873,36 @@ footer {
 }
 
 #imgCliente7 {
-    height: 8vw;
-    width: 12vw;
+    height: 6vw;
+    width: 10vw;
 }
 
-@media (max-width: 2562px) {
+@media (min-width: 1920px) {
+
+    #bodyContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #Parceiros {
+        background: none;
+    }
+
+    #mainContainer {
+        width: 2200px;
+    }
+
+    #textProjeto {
+        font-size: 300%;
+    }
+
     #ImgHome {
-        width: 20vw;
+        margin-left: 18vw;
     }
 
     .txtInfo {
-        font-size: 250%;
+        font-size: 230%;
     }
 
     .tituloInfo {
@@ -887,9 +910,8 @@ footer {
     }
 
     #textProjeto {
-        font-size: 305%;
+        font-size: 280%;
     }
-
 
     #contato {
         margin-bottom: 0.5em;
@@ -909,18 +931,6 @@ footer {
 
     #containerLeft, #containerCenter, #containerRight {
         height: 25vw;
-    }
-}
-
-@media (max-width:2334px) {
-    #containerLeft, #containerCenter, #containerRight {
-        height: 28.3vw;
-    }
-}
-
-@media (max-width: 2120px) {
-    #ImgHome {
-        width: 27vw;
     }
 }
 
@@ -1044,7 +1054,7 @@ footer {
     }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
     #txtClientes {
         font-size: 4vw;
     }
@@ -1787,5 +1797,18 @@ footer {
 
     #textProjeto {
         font-size: 4.5vw;
+    }
+}
+
+@media (min-width: 1920px) {
+
+    #bodyContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #mainContainer {
+        width: 2100px;
     }
 }
