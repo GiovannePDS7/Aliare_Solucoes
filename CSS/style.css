@@ -951,7 +951,7 @@ footer {
         font-size: 105%;
     }
 }
-
+/* 
 @media (max-width: 2264px) {
     .txtInfo {
         font-size: 225%;
@@ -970,7 +970,7 @@ footer {
     .tituloInfo {
         font-size: 305%;
     }
-}
+} */
 
 @media (max-width: 1849px) {
     .txtInfo {
@@ -1005,18 +1005,18 @@ footer {
 }
 
 
-@media (max-width: 2271px) {
+/* @media (max-width: 2271px) {
     #textProjeto {
         font-size: 260%;
     }
-}
+} */
 
 
-@media (max-width: 1971px) {
+/* @media (max-width: 1971px) {
     #textProjeto {
         font-size: 240%;
     }
-}
+} */
 
 @media (max-width: 1800px) {
     #textProjeto {
@@ -1452,8 +1452,6 @@ footer {
     .webIconDev {
         display: none;
     }
-
-
 
     .carousel-container {
         border: solid 2px #000000;
