@@ -951,6 +951,7 @@ footer {
         font-size: 105%;
     }
 }
+
 /* 
 @media (max-width: 2264px) {
     .txtInfo {
@@ -1118,7 +1119,6 @@ footer {
     }
 
     #video {
-        width: 70%;
         height: 60%;
     }
 
