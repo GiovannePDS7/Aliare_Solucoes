@@ -1471,9 +1471,9 @@ footer {
         height: 35vw;
         background:
             linear-gradient(to bottom,
-                #ffffff, #f0faff, #e6e6e6,
+                #f1f8fc, #f0faff, #e6e6e6,
                 #e6e6e6, #dddddd, #d8d8d8,
-                #c4c4c4, #696969);
+                #c4c4c4);
 
         width: 28vw;
         min-width: 100%;
