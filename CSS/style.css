@@ -1802,7 +1802,8 @@ footer {
 
 @media (min-width:2466px) {
     .txtInfo {
-        font-size: 260%
+        font-size: 230%;
+        width: 17.5vw;
     }
 
     .tituloInfo {
