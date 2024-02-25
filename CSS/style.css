@@ -68,7 +68,7 @@ header {
     line-height: 2.3em;
 }
 
-.liHeader:hover {
+.liHeader:hover .aHeader {
     color: #477CB1;
 }
 
@@ -99,6 +99,7 @@ header {
     background-color: #417AB1;
     transition: width 0.2s ease-in-out;
 }
+
 
 #navHeader {
     display: flex;
@@ -142,6 +143,10 @@ header {
 }
 
 #aHeaderBtn:hover {
+    color: #000;
+}
+.aHeader{
+    text-decoration: none;
     color: #000;
 }
 
