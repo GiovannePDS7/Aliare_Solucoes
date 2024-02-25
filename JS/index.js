@@ -5,24 +5,25 @@ document.addEventListener('DOMContentLoaded', function () {
     const projetoSection = document.getElementById('projeto');
     const parceirosSection = document.getElementById('Parceiros');
     const qmsomosSection = document.getElementById('QmSomos');
-    const headerLinks = document.querySelectorAll('#ulHeader .aHeader');
-    
+    const headerLinks = document.querySelectorAll('#ulHeader .liHeader');
+
     // Para cada link, adiciona um ouvinte de evento de clique
     headerLinks.forEach(function (link) {
         link.addEventListener('click', function (event) {
-            event.preventDefault(); 
-            const href = link.getAttribute('href');
-        
-            if (href === projetoSection.id) {
-                projetoSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            event.preventDefault();
+            const id = link.getAttribute('id');
+            console.log(id)
+
+            if (id === "liProjetos") {
+                projetoSection.scrollIntoView({ behavior: 'smooth' });
                 window.scrollBy(0, -headerHeight + 1);
             }
-            else if(href === parceirosSection.id) {
+            else if (id === "liParceiros") {
                 parceirosSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 window.scrollBy(0, -headerHeight + 1);
             }
-            else{
-                if(href === qmsomosSection.id){
+            else {
+                if (id === "liQmSomos") {
                     qmsomosSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
                     window.scrollBy(0, -headerHeight + 1);
                 }
