@@ -6,7 +6,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const parceirosSection = document.getElementById('Parceiros');
     const qmsomosSection = document.getElementById('QmSomos');
     const headerLinks = document.querySelectorAll('#ulHeader .liHeader');
-
+    const liProjetos = document.getElementById('liProjetos');
+    const liParceiros = document.getElementById('liParceiros');
+    const liQmSomos = document.getElementById('liQmSomos');
     // Para cada link, adiciona um ouvinte de evento de clique
     headerLinks.forEach(function (link) {
         link.addEventListener('click', function (event) {
@@ -14,16 +16,16 @@ document.addEventListener('DOMContentLoaded', function () {
             const id = link.getAttribute('id');
             console.log(id)
 
-            if (id === "liProjetos") {
+            if (id === liProjetos.id) {
                 projetoSection.scrollIntoView({ behavior: 'smooth' });
                 window.scrollBy(0, -headerHeight + 1);
             }
-            else if (id === "liParceiros") {
+            else if (id === liParceiros.id) {
                 parceirosSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 window.scrollBy(0, -headerHeight + 1);
             }
             else {
-                if (id === "liQmSomos") {
+                if (id === liQmSomos.id) {
                     qmsomosSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
                     window.scrollBy(0, -headerHeight + 1);
                 }
