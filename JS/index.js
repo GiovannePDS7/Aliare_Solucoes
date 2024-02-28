@@ -1,40 +1,47 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const header = document.querySelector('header');
-    const headerHeight = header.offsetHeight;
+// document.addEventListener('DOMContentLoaded', function () {
+//     const header = document.querySelector('header');
+//     const headerHeight = header.offsetHeight;
 
-    const projetoSection = document.getElementById('projeto');
-    const parceirosSection = document.getElementById('Parceiros');
-    const qmsomosSection = document.getElementById('QmSomos');
-    const headerLinks = document.querySelectorAll('#ulHeader .liHeader');
-    const liProjetos = document.getElementById('liProjetos');
-    const liParceiros = document.getElementById('liParceiros');
-    const liQmSomos = document.getElementById('liQmSomos');
-    // Para cada link, adiciona um ouvinte de evento de clique
-    headerLinks.forEach(function (link) {
-        link.addEventListener('click', function (event) {
-            event.preventDefault();
-            const id = link.getAttribute('id');
-            console.log(id)
+//     const projetoSection = document.getElementById('projeto');
+//     const parceirosSection = document.getElementById('Parceiros');
+//     const qmsomosSection = document.getElementById('QmSomos');
+//     const headerLinks = document.querySelectorAll('#ulHeader .liHeader');
+//     const liProjetos = document.getElementById('liProjetos');
+//     const liParceiros = document.getElementById('liParceiros');
+//     const liQmSomos = document.getElementById('liQmSomos');
 
-            if (id === liProjetos.id) {
-                projetoSection.scrollIntoView({ behavior: 'smooth' });
-                window.scrollBy(0, -headerHeight + 1);
-            }
-            else if (id === liParceiros.id) {
-                parceirosSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                window.scrollBy(0, -headerHeight + 1);
-            }
-            else {
-                if (id === liQmSomos.id) {
-                    qmsomosSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    window.scrollBy(0, -headerHeight + 1);
-                }
-            }
-        });
-    });
-});
+//     headerLinks.forEach(function (link) {
+//         link.addEventListener('click', function (event) {
+//             event.preventDefault();
+//             const id = link.getAttribute('id');
 
+//             if (id === liProjetos.id) {
+//                 projetoSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+//                 window.scrollBy(0, -headerHeight + 1);
+//             }
+//             else if (id === liParceiros.id) {
+//                 parceirosSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+//                 window.scrollBy(0, -headerHeight + 1);
+//             }
+//             else {
+//                 if (id === liQmSomos.id) {
+//                     qmsomosSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+//                     window.scrollBy(0, -headerHeight + 1);
+//                 }
+//             }
+//         });
+//     });
+// });
 
+const header = document.querySelector('header');
+const headerHeight = header.offsetHeight;
+const linkHeader = document.querySelectorAll('.aHeader')
+
+linkHeader.forEach( (link)=>{
+    link.addEventListener('click', function(){
+        window.scrollBy(0, -headerHeight + 1);
+    })
+})
 
 const FrameSpan = document.getElementById('FrameSpan');
 const FrameText = document.getElementById('FrameText');
