@@ -1,47 +1,27 @@
-// document.addEventListener('DOMContentLoaded', function () {
-//     const header = document.querySelector('header');
-//     const headerHeight = header.offsetHeight;
 
-//     const projetoSection = document.getElementById('projeto');
-//     const parceirosSection = document.getElementById('Parceiros');
-//     const qmsomosSection = document.getElementById('QmSomos');
-//     const headerLinks = document.querySelectorAll('#ulHeader .liHeader');
-//     const liProjetos = document.getElementById('liProjetos');
-//     const liParceiros = document.getElementById('liParceiros');
-//     const liQmSomos = document.getElementById('liQmSomos');
-
-//     headerLinks.forEach(function (link) {
-//         link.addEventListener('click', function (event) {
-//             event.preventDefault();
-//             const id = link.getAttribute('id');
-
-//             if (id === liProjetos.id) {
-//                 projetoSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-//                 window.scrollBy(0, -headerHeight + 1);
-//             }
-//             else if (id === liParceiros.id) {
-//                 parceirosSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-//                 window.scrollBy(0, -headerHeight + 1);
-//             }
-//             else {
-//                 if (id === liQmSomos.id) {
-//                     qmsomosSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-//                     window.scrollBy(0, -headerHeight + 1);
-//                 }
-//             }
-//         });
-//     });
-// });
 
 const header = document.querySelector('header');
 const headerHeight = header.offsetHeight;
 const linkHeader = document.querySelectorAll('.aHeader')
 
-linkHeader.forEach( (link)=>{
-    link.addEventListener('click', function(){
-        window.scrollBy(0, -headerHeight + 1);
-    })
-})
+linkHeader.forEach((link) => {
+    link.addEventListener('click', function (event) {
+        event.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        console.log(targetId)
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            const targetOffsetTop = targetElement.offsetTop;
+            const adjustedOffsetTop = targetOffsetTop - headerHeight;
+            window.scrollTo({
+                top: adjustedOffsetTop,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
 
 const FrameSpan = document.getElementById('FrameSpan');
 const FrameText = document.getElementById('FrameText');
