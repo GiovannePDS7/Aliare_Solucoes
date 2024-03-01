@@ -2,14 +2,13 @@
 
 const header = document.querySelector('header');
 const headerHeight = header.offsetHeight;
-const linkHeader = document.querySelectorAll('.aHeader')
+const liHeader = document.querySelectorAll('.liHeader');
 
-linkHeader.forEach((link) => {
-    link.addEventListener('click', function (event) {
+liHeader.forEach((li) => {
+    li.addEventListener('click', function (event) {
         event.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
+        const targetId = li.querySelector('.aHeader').getAttribute('href').substring(1);
         const targetElement = document.getElementById(targetId);
-
         if (targetElement) {
             const targetOffsetTop = targetElement.offsetTop;
             const adjustedOffsetTop = targetOffsetTop - headerHeight;
@@ -20,6 +19,7 @@ linkHeader.forEach((link) => {
         }
     });
 });
+
 
 
 const FrameSpan = document.getElementById('FrameSpan');
