@@ -1,26 +1,40 @@
-
-
-const header = document.querySelector('header');
-const headerHeight = header.offsetHeight;
-const liHeader = document.querySelectorAll('.liHeader');
-
-liHeader.forEach((li) => {
-    li.addEventListener('click', function (event) {
-        event.preventDefault();
-        const targetId = li.querySelector('.aHeader').getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
-        if (targetElement) {
-            const targetOffsetTop = targetElement.offsetTop;
-            const adjustedOffsetTop = targetOffsetTop - headerHeight;
-            window.scrollTo({
-                top: adjustedOffsetTop,
-                behavior: 'smooth'
-            });
-        }
+document.addEventListener('DOMContentLoaded', function () {
+    const header = document.querySelector('header');
+    const headerHeight = header.offsetHeight;
+    const liHeader = document.querySelectorAll('.liHeader');
+    const liFooter = document.querySelectorAll('.liFooter');
+    liHeader.forEach((li) => {
+        li.addEventListener('click', function (event) {
+            event.preventDefault();
+            const targetId = li.querySelector('.aHeader').getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                const targetOffsetTop = targetElement.offsetTop;
+                const adjustedOffsetTop = targetOffsetTop - headerHeight;
+                window.scrollTo({
+                    top: adjustedOffsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
     });
-});
-
-
+    liFooter.forEach((li) => {
+        li.addEventListener('click', function (event) {
+            event.preventDefault();
+            const targetId = li.querySelector('.aFooter').getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                const targetOffsetTop = targetElement.offsetTop;
+                const adjustedOffsetTop = targetOffsetTop - headerHeight;
+                window.scrollTo({
+                    top: adjustedOffsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+    
+})
 
 const FrameSpan = document.getElementById('FrameSpan');
 const FrameText = document.getElementById('FrameText');
